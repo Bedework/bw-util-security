@@ -20,7 +20,7 @@
     <bw-util-conf.version>4.1.0</bw-util-conf.version>
 
     <!-- Third Party Library Versions -->
-    <commons-codec.version>1.5</commons-codec.version>
+    <commons-codec.version>1.15</commons-codec.version>
     <junit.version>4.13.1</junit.version>
   </properties>
 
