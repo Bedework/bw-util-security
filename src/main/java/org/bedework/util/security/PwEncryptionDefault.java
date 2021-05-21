@@ -32,41 +32,39 @@ public class PwEncryptionDefault implements PwEncryptionIntf, Logged {
 
   private String pubKeys;
 
-  private PKITools pki;
+  private final PKITools pki;
 
   /**
-   * @throws Throwable
    */
-  public PwEncryptionDefault() throws Throwable {
+  public PwEncryptionDefault() {
     pki = new PKITools();
   }
 
   /**
-   * @param privKeys
-   * @param pubKeys
-   * @throws Throwable
+   * @param privKeys private keys
+   * @param pubKeys public keys
    */
   @Override
   public void init (final String privKeys,
-                    final String pubKeys) throws Throwable {
+                    final String pubKeys) {
     this.privKeys = privKeys;
     this.pubKeys = pubKeys;
   }
 
   @Override
   public String encrypt(final String val) throws Throwable {
-    int numKeys = pki.countKeys(privKeys);
+    final int numKeys = pki.countKeys(privKeys);
 
     if (debug()) {
       debug("Number of keys: " + numKeys);
     }
 
-    int keyNum = numKeys - 1;
+    final int keyNum = numKeys - 1;
 
-    String etext = pki.encryptWithKeyFile(pubKeys,
-                                          val, keyNum);
+    final String etext = pki.encryptWithKeyFile(pubKeys,
+                                                val, keyNum);
 
-    StringBuilder sb = new StringBuilder();
+    final StringBuilder sb = new StringBuilder();
 
     sb.append(keyNum);
     sb.append("{");
@@ -84,13 +82,13 @@ public class PwEncryptionDefault implements PwEncryptionIntf, Logged {
 
   @Override
   public String decrypt(final String encrypted) throws Throwable {
-    int pos = encrypted.indexOf("{");
+    final int pos = encrypted.indexOf("{");
 
     if ((pos < 0) || (encrypted.lastIndexOf("}") != (encrypted.length() - 1))) {
       throw new Exception(badPwFormat);
     }
 
-    int keyNum = Integer.valueOf(encrypted.substring(0, pos));
+    final int keyNum = Integer.parseInt(encrypted.substring(0, pos));
     return pki.decryptWithKeyFile(privKeys,
                                   encrypted.substring(pos + 1, encrypted.length() - 1),
                                   keyNum);
@@ -110,7 +108,7 @@ public class PwEncryptionDefault implements PwEncryptionIntf, Logged {
    *                   Logged methods
    * ==================================================================== */
 
-  private BwLogger logger = new BwLogger();
+  private final BwLogger logger = new BwLogger();
 
   @Override
   public BwLogger getLogger() {

@@ -32,12 +32,11 @@ public interface PwEncryptionIntf extends Serializable {
 
   /** Call before any other method.
    *
-   * @param privKeys
-   * @param pubKeys
-   * @throws Throwable
+   * @param privKeys private keys
+   * @param pubKeys public keys
    */
   public void init (final String privKeys,
-                    final String pubKeys) throws Throwable;
+                    final String pubKeys);
 
   /** Encrypt the password and return the result.
    *
