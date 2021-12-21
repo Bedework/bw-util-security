@@ -14,6 +14,13 @@
   <description>Security utility classes</description>
   <url>https://github.com/Bedework/bw-util-security</url>
 
+  <scm>
+    <connection>scm:git:git@github.com:Bedework/bw-util-security.git</connection>
+    <developerConnection>scm:git:git@github.com:Bedework/bw-util-security.git</developerConnection>
+    <url>https://github.com/Bedework/bw-util-security</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <dependencies>
     <!-- Bedework: Web Services -->
 
