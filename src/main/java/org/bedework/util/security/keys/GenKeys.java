@@ -33,11 +33,8 @@ public class GenKeys extends ConfBase<GenKeysConfigImpl>
   String testText =
     "A variable of array type holds a reference to an object. ";
 
-  public GenKeys(final String confuriPname) {
-    super();
-
-    setConfigName("genkeys");
-    setConfigPname(confuriPname);
+  public GenKeys(final String confDirName) {
+    super(null, confDirName, "genkeys");
   }
 
   @Override
