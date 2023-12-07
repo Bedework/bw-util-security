@@ -55,3 +55,6 @@ For full details, see [Sonatype's documentation for using Maven to publish relea
 #### 5.0.1
     * Changes to util-config
     * Update library versions
+
+#### 5.0.2
+    * sonatype release failure
