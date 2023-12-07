@@ -4,11 +4,11 @@
   <parent>
     <groupId>org.bedework</groupId>
     <artifactId>bedework-parent</artifactId>
-    <version>25-SNAPSHOT</version>
+    <version>25</version>
   </parent>
 
   <artifactId>bw-util-security</artifactId>
-  <version>5.0.1-SNAPSHOT</version>
+  <version>5.0.1</version>
 
   <name>Bedework: security utility classes</name>
   <description>Security utility classes</description>

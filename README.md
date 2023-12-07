@@ -35,3 +35,23 @@ For full details, see [Sonatype's documentation for using Maven to publish relea
 ### Release Notes
 #### 4.1.0
     * Moved from bw-util
+
+#### 4.1.1
+    * Update library versions
+
+#### 4.1.2
+    * Update library versions
+
+#### 4.1.3
+    * Update library versions
+
+#### 4.1.4
+    * Update library versions
+
+#### 5.0.0
+    * Use bedework parent
+    * Update library versions
+
+#### 5.0.1
+    * Changes to util-config
+    * Update library versions
