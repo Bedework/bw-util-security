@@ -58,3 +58,6 @@ For full details, see [Sonatype's documentation for using Maven to publish relea
 
 #### 5.0.2
     * sonatype release failure
+
+#### 5.0.3
+* Pre jakarta release
