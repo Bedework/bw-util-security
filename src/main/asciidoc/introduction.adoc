@@ -1,0 +1,3 @@
+[[security]]
+== Security classes
+Provides classes for some basic security tasks such as key generation and encryption/decryption tools.
