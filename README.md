@@ -9,11 +9,11 @@ This project provides a number of security related utility classes and methods f
 2. Maven 3
 
 ## Using this project
-See documentation at [github pages for this project](https://bedework.github.io/bw-security/)
+See documentation at [github pages for this project](https://bedework.github.io/bw-util-logging/)
 
 ## Reporting Issues
 Please report issues via the github issues tab at
-> https://github.com/Bedework/bw-security/issues
+> https://github.com/Bedework/bw-util-logging/issues
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md).
